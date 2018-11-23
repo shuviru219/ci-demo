@@ -1,7 +1,6 @@
 stages:
 - name: run
   steps:
-  - runScriptConfig:
-      image: alpine
-      shellScript: kubectl create -f ci/app.yaml --namespace default
+  - applyYamlConfig:
+      path: ci/app.yaml
 timeout: 60
