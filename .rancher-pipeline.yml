@@ -1,6 +1,0 @@
-stages:
-- name: run
-  steps:
-  - applyYamlConfig:
-      path: ci/app.yaml
-timeout: 60
