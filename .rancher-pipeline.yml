@@ -3,4 +3,7 @@ stages:
   steps:
   - applyYamlConfig:
       path: ci/app.yaml
+  - runScriptConfig:
+      image: php:latest
+      shellScript: ls
 timeout: 60
