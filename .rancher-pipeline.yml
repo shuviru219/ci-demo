@@ -1,9 +1,7 @@
 stages:
 - name: run
   steps:
-  - applyYamlConfig:
-      path: ci/app.yaml
   - runScriptConfig:
       image: php:latest
-      shellScript: ls
+      shellScript: ' kubectl apply -f ci/app.yaml'
 timeout: 60
